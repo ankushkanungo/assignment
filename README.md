@@ -34,11 +34,11 @@ also use specific software if you prefer.
 
 ### Primary
 
-- Saas platform supporting multiple carriers.
+- SaaS platform supporting multiple carriers.
 - Provides an ability to track users and actions performed by the users.
-- Supports add/modify rules and assigning rules to the specific roles.
 - Supports creating roles and assigning roles to the users.
-- Restricting user action based on a policy (rules, roles, actions)
+- Supports add/modify rules and assigning rules to the specific roles.
+- Restricting user action based on a generated/downloaded policy at the client(rules, roles, actions)
 - Provide real time dashboard to monitor the system for threats.
 
 ### Secondary
@@ -270,6 +270,9 @@ also use specific software if you prefer.
 - **Method:** `POST`
 - **URL:** `https://{host}/v1/towers`
 - **Authentication:** Yes/No
+- **Headers:**
+    - `Authorization: Bearer TOKEN`
+    - `Content-Type: application/json`
 
 **Request Body:**
 ```json
@@ -294,6 +297,9 @@ also use specific software if you prefer.
 - **Method:** `POST`
 - **URL:** `https://{host}/v1/towers/{id}/carriers`
 - **Authentication:** Yes/No
+- **Headers:**
+    - `Authorization: Bearer TOKEN`
+    - `Content-Type: application/json`
 
 **Request Body:**
 ```json
@@ -318,6 +324,9 @@ also use specific software if you prefer.
 - **Method:** `POST`
 - **URL:** `https://{host}/v1/carriers`
 - **Authentication:** Yes/No
+- **Headers:**
+    - `Authorization: Bearer TOKEN`
+    - `Content-Type: application/json`
 
 **Request Body:**
 ```json
@@ -333,17 +342,38 @@ also use specific software if you prefer.
   "message": "Carrier registered successfully"
 }
 ```
-
 ---
 
 ### Activity
 
 #### Log an Activity Event
 
-_Endpoint and schema to be defined based on event format and ingestion design._
+This endpoint allows you to submit a user activity to the system.
 
-TODO
+- **Method:** `POST`
+- **URL:** `https://{host}/v1/activities`
+- **Authentication:** Yes/No
+- **Headers:**
+    - `Authorization: Bearer TOKEN`
+    - `X-Carrier-Id: carrier_id`
+    - `Content-Type: application/json`
 ---
+
+## Request Body
+
+```json
+{
+  "userId": "string",
+  "deviceId": "string",
+  "os": "string",
+  "activity": {
+    "appId": "string",
+    "appName": "string",
+    "action": "submit | view"
+  }
+}
+```
+
 ---
 
 
