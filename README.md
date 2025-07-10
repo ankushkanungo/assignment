@@ -204,10 +204,10 @@ also use specific software if you prefer.
   "description": "string",
   "condition": {
     "field": "appId",
-    "operator": "EQUALS" | "NOT_EQUALS" | "CONTAINS",
+    "operator": "EQUALS | NOT_EQUALS | CONTAINS",
     "value": "string"
   },
-  "action": "BLOCK" | "ALLOW" | "ALERT"
+  "action": "BLOCK | ALLOW | ALERT"
 }
 ```
 
@@ -254,7 +254,7 @@ also use specific software if you prefer.
 **Request Body:**
 ```json
 {
-  "op": "add" | "remove" | "replace",
+  "op": "add | remove | replace",
   "value": ["carrier_id1", "carrier_id2"]
 }
 ```
@@ -323,7 +323,7 @@ also use specific software if you prefer.
 ```json
 {
   "name": "string",
-  "subType": "basic" | "prime"
+  "subType": "basic | prime"
 }
 ```
 
