@@ -382,7 +382,7 @@ This endpoint allows you to submit a user activity to the system.
 
 ---
 
-## 🔍 Deep Dive: Non-Functional Requirements
+## 7. Deep Dive: Non-Functional Requirements
 
 ---
 
