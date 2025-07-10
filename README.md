@@ -195,7 +195,7 @@
 #### Add Rule to Role (with Carriers)
 
 - **Method:** `POST`
-- **URL:** `https://{host}/v1/role-rules`
+- **URL:** `https://{host}/v1/policies`
 - **Authentication:** Yes/No
 - **Headers:**
     - `Authorization: Bearer TOKEN`
@@ -215,7 +215,7 @@
 #### Update Carrier IDs in Role-Rule
 
 - **Method:** `PATCH`
-- **URL:** `https://{host}/v1/role-rules/{id}/carriers`
+- **URL:** `https://{host}/v1/policies/{id}/carriers`
 - **Authentication:** Yes/No
 - **Headers:**
     - `Authorization: Bearer TOKEN`
