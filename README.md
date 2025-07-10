@@ -30,7 +30,7 @@ also use specific software if you prefer.
 
 ---
 ## 1. Requirements
-## - Functional Requirements
+## Functional Requirements
 
 ### Primary
 
@@ -49,7 +49,7 @@ also use specific software if you prefer.
 
 ---
 
-## - Nonfunctional Requirements
+## Nonfunctional Requirements
 
 | Property          | Description                                                                |
 |-------------------|----------------------------------------------------------------------------|
@@ -74,7 +74,7 @@ also use specific software if you prefer.
 
 ---
 
-## - Data Storage Strategy
+## Data Storage Strategy
 
 | Data Type               | Storage Type                                                     | Notes                                     |
 |-------------------------|------------------------------------------------------------------|-------------------------------------------|
