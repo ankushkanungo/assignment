@@ -8,14 +8,14 @@
 - Provides an ability to track users and actions performed by the users.
 - Supports creating roles and assigning roles to the users.
 - Supports add/modify rules and assigning rules to the specific roles.
-- Restricting user action based on a generated/downloaded policy at the client(rules, roles, actions)
+- Restricting user action based on a generated/downloaded policy(rules, roles, actions) at the client.
 - Provide real time dashboard to monitor the system for threats.
 
 ### Secondary
 
 - Ability to auto-discovery of the devices
 - Support for registering a cell tower with carriers.
-- Ability to provide auto-remedial action as the cell based on carrier subscription plan on order to secure the edge
+- Ability to provide auto-remedial action based on carrier subscription plan in order to secure the edge
 
 ---
 
@@ -93,11 +93,10 @@
 }
 ```
 
-**Response (201 Created):**
+**Response (200 OK):**
 ```json
 {
-  "message": "User registered successfully",
-  "user_id": "uuid-string"
+  "message": "User registered successfully"
 }
 ```
 
@@ -229,7 +228,7 @@
 }
 ```
 **Response:**
-201 created
+200 OK
 
 ---
 
